@@ -1,5 +1,6 @@
+/** Direct GitHub Release asset URL (tag + filename must match the release). */
 const DEFAULT_DOWNLOAD =
-  "https://github.com/sahilmahendrakar/flux/releases/latest";
+  "https://github.com/sahilmahendrakar/flux-web/releases/download/v0.1.0/Flux-0.1.0-arm64.dmg";
 
 export default function Home() {
   const downloadUrl =
@@ -26,9 +27,8 @@ export default function Home() {
           </p>
           <a
             href={downloadUrl}
+            target="_self"
             className="group relative inline-flex h-11 items-center justify-center rounded-full bg-neutral-950 px-8 text-sm font-medium text-white transition-[transform,box-shadow] duration-200 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_12px_40px_-12px_rgba(0,0,0,0.35)] active:scale-[0.98] dark:bg-white dark:text-neutral-950 dark:hover:shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_12px_48px_-12px_rgba(0,0,0,0.45)]"
-            rel="noopener noreferrer"
-            target="_blank"
           >
             Download
           </a>
