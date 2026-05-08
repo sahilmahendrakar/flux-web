@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Violet accents align with Flux (Tailwind violet-* in AgentBadge, task pills, focus rings). */
+:root {
+  --background: #f8f7fb;
+  --foreground: #0c0c0c;
+  --muted: #737373;
+  /* violet-500 #8b5cf6 */
+  --accent-glow: rgb(139 92 246 / 0.11);
+  /* violet-600 #7c3aed */
+  --accent-glow-2: rgb(124 58 237 / 0.07);
+  --accent-glow-3: rgb(139 92 246 / 0.045);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09080f;
+    --foreground: #fafafa;
+    --muted: #a1a1aa;
+    --accent-glow: rgb(139 92 246 / 0.14);
+    --accent-glow-2: rgb(167 139 250 / 0.065);
+    --accent-glow-3: rgb(139 92 246 / 0.055);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.hero-ambient {
+  background:
+    radial-gradient(
+      ellipse 95% 58% at 50% -18%,
+      var(--accent-glow),
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 48% 38% at 100% 92%,
+      var(--accent-glow-2),
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 35% 28% at 0% 85%,
+      var(--accent-glow-3),
+      transparent 45%
+    );
+}
