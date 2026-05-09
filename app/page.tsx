@@ -22,7 +22,7 @@ export default function Home() {
           aria-label="Flux"
         >
           <div className="flex max-w-md flex-col items-center text-center">
-            <div className="mb-12 flex items-center gap-3">
+            <div className="mb-3 flex items-center gap-3">
               <h1 className="text-[2.75rem] font-extralight tracking-[-0.04em] sm:text-6xl sm:tracking-[-0.045em]">
                 Flux
               </h1>
@@ -30,6 +30,9 @@ export default function Home() {
                 Beta
               </span>
             </div>
+            <p className="mb-12 max-w-[17rem] text-sm leading-relaxed text-[var(--muted)] sm:max-w-none sm:text-[0.9375rem]">
+              Orchestrate your coding agents.
+            </p>
             <div className="flex flex-col items-center gap-3">
               <a
                 href={downloadUrl}
