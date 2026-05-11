@@ -2,7 +2,7 @@
 const DEFAULT_DOWNLOAD =
   "https://github.com/sahilmahendrakar/flux-web/releases/download/v0.1.0/Flux-0.1.0-arm64.dmg";
 
-const DEMO_VIDEO_ID = "bMXjfya3wgQ";
+const DEMO_VIDEO_ID = "uh_haSxyhyw";
 
 export default function Home() {
   const downloadUrl =
