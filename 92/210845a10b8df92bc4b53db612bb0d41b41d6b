@@ -1,0 +1,68 @@
+components/site/WorkflowPillars.tsx
+  s_50156c290368af::t_00fc1f88dd2af3 6-10
+components/site/AgentBand.tsx
+  s_50156c290368af::t_ae294973067449 2,7-11,13-23
+components/site/FeatureSection.tsx
+  s_50156c290368af::t_dde7d3a46ec32d 3,14,27,33,35,37
+  s_50156c290368af::t_ad92507c67796e 2,4,12-13,45-55
+components/site/CompositionPrimitives.tsx
+  s_50156c290368af::t_e1671121a7c0cc 39,41
+  s_50156c290368af::t_59876120be16bf 1-24,26,28-38,40,42-51,53
+  s_50156c290368af::t_4ce9ea786cd7c3 25,52
+  s_50156c290368af::t_fee4c6d48a373f 27
+components/site/MarketingScreenshot.tsx
+  s_50156c290368af::t_a5a0d4ddda9309 39
+  s_50156c290368af::t_a472925f1d3da4 1-22,24-38,40-47
+  s_50156c290368af::t_d0d70a155666fd 23
+components/site/DemoSection.tsx
+  s_50156c290368af::t_56fe9f0b3b6eee 21-31
+content/site.ts
+  s_50156c290368af::t_4add9750f5a4d4 35-36,44-45,47
+  s_50156c290368af::t_09457a2cec33a3 58
+  s_50156c290368af::t_bc3a4c9cf3a5da 201-202,207,211-212,220-222,230-231,240-252,257-277
+  s_50156c290368af::t_d0b8c4f9ca42ad 150-180,182-186
+  s_50156c290368af::t_c11e9064bd72d8 62-63
+  s_50156c290368af::t_078e6c75da4497 181
+  s_50156c290368af::t_9ff1f929015f83 11-14
+components/site/HowItWorks.tsx
+  s_50156c290368af::t_1da024ecde6e63 2,12-13,15-20,22-48
+  s_50156c290368af::t_47d0dccebc2ae8 21
+app/globals.css
+  s_50156c290368af::t_f51d216ff2ae84 526-543
+  s_50156c290368af::t_eb9547092d07da 193-198
+  s_50156c290368af::t_a3089fdee87c6d 233,236-241
+  s_50156c290368af::t_204411910e413c 199-232,234-235,242-255
+components/site/Hero.tsx
+  s_50156c290368af::t_9f3f06e9c402e4 23
+  s_50156c290368af::t_3bab9567e23b85 1-2,62-68
+  s_50156c290368af::t_1f747a8ca4ce4d 19,22
+components/site/ProductFragments.tsx
+  s_50156c290368af::t_5e1ccf556eb471 253-257,260
+  s_50156c290368af::t_9a48666c7438dd 226-235
+  s_50156c290368af::t_8751a80de0905b 23,116,131
+  s_50156c290368af::t_cf28cb9e2d9d86 77
+  s_50156c290368af::t_c659351ccc0dfe 137
+  s_50156c290368af::t_f89a0608cf29f4 127
+  s_50156c290368af::t_a4035fb931ce63 1-22,24-29,31-76,78-115,117-126,128-130,132-136,138-225,236-252,258-259,261-349
+  s_50156c290368af::t_87682312a1c38b 30
+app/page.tsx
+  s_50156c290368af::t_ed11ca6919299b 6
+components/site/ProductShowcase.tsx
+  s_50156c290368af::t_f958469cfe5a33 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "92210845a10b8df92bc4b53db612bb0d41b41d6b",
+  "prompts": {},
+  "sessions": {
+    "s_50156c290368af": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "fe1c4367-a9ae-430a-899a-d28ca744d5ff",
+        "model": "default"
+      },
+      "human_author": "Sahil Mahendrakar <sahil.mahendrakar@gmail.com>"
+    }
+  }
+}
