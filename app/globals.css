@@ -5,9 +5,26 @@
   --background: #f8f7fb;
   --foreground: #0c0c0c;
   --muted: #737373;
-  /* violet-500 #8b5cf6 */
+
+  /* Brand */
+  --brand-violet: #8b5cf6;
+  --brand-violet-dark: #7c3aed;
+
+  /* Surfaces */
+  --surface: rgb(0 0 0 / 0.02);
+  --surface-elevated: rgb(255 255 255 / 0.6);
+  --surface-inset: rgb(0 0 0 / 0.03);
+  --surface-nav: rgb(248 247 251 / 0.72);
+
+  /* Borders & shadows */
+  --border-subtle: rgb(0 0 0 / 0.08);
+  --shadow-panel:
+    0 1px 0 rgb(255 255 255 / 0.04) inset,
+    0 24px 64px -32px rgb(0 0 0 / 0.12);
+  --ring-panel: rgb(0 0 0 / 0.04);
+
+  /* Ambient glow (violet-500 / violet-600 family) */
   --accent-glow: rgb(139 92 246 / 0.11);
-  /* violet-600 #7c3aed */
   --accent-glow-2: rgb(124 58 237 / 0.07);
   --accent-glow-3: rgb(139 92 246 / 0.045);
 }
@@ -24,6 +41,18 @@
     --background: #09080f;
     --foreground: #fafafa;
     --muted: #a1a1aa;
+
+    --surface: rgb(255 255 255 / 0.03);
+    --surface-elevated: rgb(255 255 255 / 0.04);
+    --surface-inset: rgb(255 255 255 / 0.02);
+    --surface-nav: rgb(9 8 15 / 0.72);
+
+    --border-subtle: rgb(255 255 255 / 0.1);
+    --shadow-panel:
+      0 1px 0 rgb(255 255 255 / 0.06) inset,
+      0 24px 80px -40px rgb(0 0 0 / 0.5);
+    --ring-panel: rgb(255 255 255 / 0.06);
+
     --accent-glow: rgb(139 92 246 / 0.14);
     --accent-glow-2: rgb(167 139 250 / 0.065);
     --accent-glow-3: rgb(139 92 246 / 0.055);
@@ -36,6 +65,8 @@ body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
+/* Ambient page background */
+.site-ambient,
 .hero-ambient {
   background:
     radial-gradient(
@@ -53,4 +84,131 @@ body {
       var(--accent-glow-3),
       transparent 45%
     );
+}
+
+/* Reusable site primitives */
+.site-panel {
+  border-radius: 1rem;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  box-shadow: var(--shadow-panel);
+  outline: 1px solid var(--ring-panel);
+}
+
+.site-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.625rem;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.site-btn-primary {
+  display: inline-flex;
+  height: 2.75rem;
+  min-width: 10.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding-inline: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: #0a0a0a;
+  color: #fff;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.site-btn-primary:hover {
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.06),
+    0 12px 40px -12px rgb(0 0 0 / 0.35);
+}
+
+.site-btn-primary:active {
+  transform: scale(0.98);
+}
+
+.site-btn-secondary {
+  display: inline-flex;
+  height: 2.75rem;
+  min-width: 10.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  padding-inline: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition:
+    color 0.2s,
+    background-color 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.site-btn-secondary:hover {
+  border-color: var(--border-subtle);
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+.site-btn-secondary:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-btn-primary {
+    background: #fff;
+    color: #0a0a0a;
+  }
+
+  .site-btn-primary:hover {
+    box-shadow:
+      0 0 0 1px rgb(0 0 0 / 0.06),
+      0 12px 48px -12px rgb(0 0 0 / 0.45);
+  }
+}
+
+/* Motion — decorative only; core content works without it */
+.motion-safe {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-safe {
+    animation: site-fade-in 0.6s ease-out both;
+  }
+
+  @keyframes site-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
