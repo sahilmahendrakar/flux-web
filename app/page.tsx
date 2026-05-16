@@ -7,7 +7,6 @@ import { Footer } from "@/components/site/Footer";
 import { Hero } from "@/components/site/Hero";
 import { HowItWorks } from "@/components/site/HowItWorks";
 import { Nav } from "@/components/site/Nav";
-import { ProductShowcase } from "@/components/site/ProductShowcase";
 import { WorkflowPillars } from "@/components/site/WorkflowPillars";
 import { featureBlocks, getSiteUrls } from "@/content/site";
 
@@ -21,7 +20,6 @@ export default function Home() {
         <Nav urls={urls} />
         <main className="flex flex-1 flex-col">
           <Hero urls={urls} />
-          <ProductShowcase />
           <DemoSection urls={urls} />
           <HowItWorks />
           <WorkflowPillars />
