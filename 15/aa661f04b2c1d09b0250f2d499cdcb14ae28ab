@@ -1,0 +1,26 @@
+app/layout.tsx
+  s_50156c290368af::t_1b1551ace1a99f 3
+  s_50156c290368af::t_82b575b02d7c0d 34
+app/global-error.tsx
+  s_50156c290368af::t_86dbc4e4bce054 1-30
+package.json
+  s_50156c290368af::t_1525f4b408723e 8
+components/site/AnalyticsScripts.tsx
+  s_50156c290368af::t_48c8c2fe057458 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "15aa661f04b2c1d09b0250f2d499cdcb14ae28ab",
+  "prompts": {},
+  "sessions": {
+    "s_50156c290368af": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "fe1c4367-a9ae-430a-899a-d28ca744d5ff",
+        "model": "default"
+      },
+      "human_author": "Sahil Mahendrakar <sahil.mahendrakar@gmail.com>"
+    }
+  }
+}
