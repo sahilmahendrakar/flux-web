@@ -1,0 +1,21 @@
+content/site.ts
+  s_8eeb5b0d0af281::t_832c5273dfa095 9
+components/site/FluxLogo.tsx
+  s_8eeb5b0d0af281::t_a9f779abfba302 1-2,7,13-18,20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "8cf3d18cfa0bd4d5019b78a5649edfc57074e6f8",
+  "prompts": {},
+  "sessions": {
+    "s_8eeb5b0d0af281": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "58e3eccd-2950-41d4-a825-d80a16d0ce59",
+        "model": "default"
+      },
+      "human_author": "Sahil Mahendrakar <sahil.mahendrakar@gmail.com>"
+    }
+  }
+}
