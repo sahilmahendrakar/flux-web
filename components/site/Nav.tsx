@@ -18,7 +18,6 @@ export function Nav({ urls }: NavProps) {
           >
             <FluxLogo />
           </a>
-          <span className="site-pill hidden sm:inline-flex">Beta</span>
         </div>
 
         <nav

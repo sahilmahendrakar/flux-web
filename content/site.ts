@@ -6,7 +6,7 @@
 export const DEFAULT_DOWNLOAD_URL =
   "https://github.com/sahilmahendrakar/flux-web/releases/download/v0.1.1/Flux-0.1.1-arm64.dmg";
 
-export const DEFAULT_GITHUB_URL = "https://github.com/sahilmahendrakar/flux-web";
+export const DEFAULT_GITHUB_URL = "https://github.com/sahilmahendrakar/fluxx";
 
 /** Self-hosted demo in `public/demo/`. Override with NEXT_PUBLIC_FLUX_DEMO_VIDEO_SRC. */
 export const DEFAULT_DEMO_VIDEO_SRC = "/demo/flux-demo-short.mp4";
