@@ -33,6 +33,7 @@ export const metadata: Metadata = {
         width: siteShareImage.width,
         height: siteShareImage.height,
         alt: siteShareImage.alt,
+        type: siteShareImage.type,
       },
     ],
   },
